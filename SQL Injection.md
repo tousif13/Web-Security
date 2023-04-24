@@ -14,6 +14,13 @@
 
 ![insert](https://user-images.githubusercontent.com/33444140/234028747-9d5b586e-62ae-4843-a5dc-ed23ee15614c.png)
 
-### Select statement
+### Select statements with WHERE clause
 
 ![select](https://user-images.githubusercontent.com/33444140/234029106-53885bff-5e16-43d6-808c-a4fda1566641.png)
+
+### Update statements
+
+![update](https://user-images.githubusercontent.com/33444140/234029732-238074dd-b451-4000-8933-f0330a81b56e.png)
+
+### Getting Data from a user
+
