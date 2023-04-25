@@ -44,6 +44,20 @@
 
 ![aor1=1](https://user-images.githubusercontent.com/33444140/234156715-2bf93699-e7ac-4e49-b024-7b34eacd7668.png)
 
+### Modify Database
+
+![chngepswd](https://user-images.githubusercontent.com/33444140/234171912-4a4631c3-6b95-4d2b-ba0f-51265d474ebe.png)
+
+`Before change`
+
+![beforepswd](https://user-images.githubusercontent.com/33444140/234171961-ac0b60c9-d804-40fa-890a-da6da4374517.png)
+
+![pswd](https://user-images.githubusercontent.com/33444140/234171995-de45eadd-aef6-4804-a58a-9e6ed5e71f40.png)
+
+`Updated Salary`
+
+![afterpswd](https://user-images.githubusercontent.com/33444140/234172023-c74e2889-2d80-4d10-8acc-f81a5999dac3.png)
+
 ### Drop Table
 
 ![drop](https://user-images.githubusercontent.com/33444140/234156748-3fbe8b38-e521-4705-82e5-46dbaa95e4f0.png)
