@@ -156,3 +156,29 @@ a set of DTD declarations, it can be done in two ways:
     </library>
     
 ## XML Schema
+
+While DTD is part of XML specification and supported by any XML processors, it is weak in its expressiveness for defining complex data structures. XML Schema is an alternative industry standard for defining XML dialects.
+
+### Example :
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xs:schema 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="library">
+            <xs:complexType>
+                <xs:sequence>
+                     <xs:element name="dvd" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="title" type="xs:string"/>
+                                <xs:element name="format" type="xs:string"/>
+                                <xs:element name="genre" type="xs:string"/>
+                            </xs:sequence>
+                            <xs:attribute name="id" type="xs:integer" use="required"/>
+                        </xs:complexType>
+                      </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+    </xs:schema>
+    
