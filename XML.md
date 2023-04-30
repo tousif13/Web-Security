@@ -198,3 +198,39 @@ In the above example "xs" is an XML prefix representing namespace `http://www.w3
                 </xs:sequence>
             </xs:complexType>
         </xs:element>
+
+## Referencing XML Schema Specification in an XML Document
+
+### Without Target Namespace
+
+    <rootTag
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schemaFileURL"
+    >
+    
+### With Namespace
+
+Attribute - `schemaLocation`
+
+    <rootTag
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="namaspaceString schemaFileURL"
+    >
+
+## XML Parsing and Validation with SAX and DOM
+
+### SAX :
+
+* SAX works as a pipeline. It reads in the input XML document sequentially, and fires events when it detects the start or end of language features like elements and attributes. 
+* The application adopting a SAX parser needs to write an event handler class that has 
+a processing method for each of the event types, and the methods are invoked by 
+the SAX parser when corresponding types of events are fired.
+* SAX is very efficient for some types of applications that don‟t need to search information 
+backwards in an XML document
+
+### DOM :
+
+* DOM parser builds a complete tree data structure in the computer memory so it can be more convenient for detailed document analysis and language transformation. 
+* Even though DOM parsers use more computer memory, it is the main type of XML parser that supports the Ajax technology.
+
+Both SAX and DOM can work in validation mode.
