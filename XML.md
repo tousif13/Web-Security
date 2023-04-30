@@ -182,3 +182,19 @@ While DTD is part of XML specification and supported by any XML processors, it i
           </xs:element>
     </xs:schema>
     
+In the above example "xs" is an XML prefix representing namespace `http://www.w3.org/2001/XMLSchema` In an XML document, if an element is qualified by its namespace prefix, as “xs:element” for element `element` declared in namespace 
+“http://www.w3.org/2001/XMLSchema”, its attributes and nested elements by default belong to the same namespace.
+
+### A mixed complex type element can contain attributes, elements and text.
+
+### Example:
+
+        <xs:element name="letter">
+            <xs:complexType mixed="true">
+                <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="orderID" type="xs:positiveInteger"/>
+                    <xs:element name="shipDate" type="xs:date"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
