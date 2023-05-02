@@ -219,18 +219,4 @@ Attribute - `schemaLocation`
 
 ## XML Parsing and Validation with SAX and DOM
 
-### SAX :
-
-* SAX works as a pipeline. It reads in the input XML document sequentially, and fires events when it detects the start or end of language features like elements and attributes. 
-* The application adopting a SAX parser needs to write an event handler class that has 
-a processing method for each of the event types, and the methods are invoked by 
-the SAX parser when corresponding types of events are fired.
-* SAX is very efficient for some types of applications that don‟t need to search information 
-backwards in an XML document
-
-### DOM :
-
-* DOM parser builds a complete tree data structure in the computer memory so it can be more convenient for detailed document analysis and language transformation. 
-* Even though DOM parsers use more computer memory, it is the main type of XML parser that supports the Ajax technology.
-
-Both SAX and DOM can work in validation mode.
+![image](https://user-images.githubusercontent.com/33444140/235578006-5ddb8b2b-ccda-4b9c-83bf-bc4d0b679c95.png)
